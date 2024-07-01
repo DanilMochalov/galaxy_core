@@ -1,28 +1,26 @@
 import React from 'react';
-import './Header.css'; // если вы планируете использовать стили
+import styles from './Header.module.css';
+import logo from '../assets/images/logo.png'
+import Button from './Button.tsx';
 
 
-const Header = () => {
+const Header: React.FC = () => {
   return (
-    <header className="header">
-      <div>
-        <img></img>
+    <header className={styles.header}>
+      <div className={styles.logo}>
+        <img src={logo} alt="Логотип" />
       </div>
-      <div>
-        <ul>
-          <li>О нас</li>
-          <li>Возможности</li>
-          <li>Партнёры</li>
-          <li>Контакты</li>
+      <nav className={styles.nav}>
+        <ul className={styles.navList}>
+          <li><a href="#about" className={styles.navItem}>О нас</a></li>
+          <li><a href="#features" className={styles.navItem}>Возможности</a></li>
+          <li><a href="#partners" className={styles.navItem}>Партнёры</a></li>
+          <li><a href="#contacts" className={styles.navItem}>Контакты</a></li>
         </ul>
-      </div>
-      <div>
-      <button>
-        Вход
-      </button>
-      <button>
-        Регистрация
-      </button>
+      </nav>
+      <div className={styles.actions}>
+        <Button>Вход</Button>
+        <Button>Регистрация</Button>
       </div>
     </header>
   );
