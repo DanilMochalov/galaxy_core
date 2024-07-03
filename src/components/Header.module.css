@@ -1,21 +1,29 @@
+@font-face {
+  font-family: 'SouthbankLT';
+  src: url('../assets/fonts/SouthbankLT.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-family: 'SouthbankLT';
     padding: 20px;
-    background-color: #bbb3b3;
-    color: #fff;
+    background-color: #ffffff;
+    color: #ffffff;
   }
   
   .logo img {
-    max-width: 50px;
+    max-width: 200px;
     height: auto;
     margin-left: 30px;
   }
   
   .nav {
     flex-grow: 1;
-    margin-left: 300px;
+    margin-left: 500px;
   }
   
   .navList {
@@ -28,13 +36,13 @@
   
   .navItem {
     text-decoration: none;
-    color: #ffffff;
+    color: #000000;
     padding: 0.5rem 1rem;
     transition: background-color 0.3s;
   }
   
   .navItem:hover {
-    background-color: #000033;
+    background-color: #c6c6ca;
   }
   
   .actions {
@@ -44,7 +52,7 @@
   }
   
   .button {
-    background-color: #007bff;
+    background-color: #000000;
     color: #fff;
     border: none;
     padding: 0.5rem 1rem;
@@ -53,6 +61,6 @@
   }
   
   .button:hover {
-    background-color: #0056b3;
+    background-color: #c6c6ca;
   }
   
