@@ -1,14 +1,13 @@
 import './App.css';
 import Header from './components/Header.tsx';
 import Footer from './components/Footer.tsx'
-import LoginForm from './components/LoginForm';
-import RegisterForm from './components/RegisterForm';
-import Profile from './components/Profile';
+import HomePage from './pages/HomePage.tsx'
 
 function App() {
   return (
     <div className="App">
       <Header/>
+      <HomePage/>
       <Footer/>
     </div>
   );

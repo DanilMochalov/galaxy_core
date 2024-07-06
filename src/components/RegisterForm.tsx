@@ -17,7 +17,7 @@ const RegisterForm: React.FC = () => {
   return (
     <form className={styles.form} onSubmit={handleSubmit}>
       <label>
-        Full Name:
+        ФИО:
         <input 
           type="text" 
           value={fullName} 
@@ -26,7 +26,7 @@ const RegisterForm: React.FC = () => {
         />
       </label>
       <label>
-        Email:
+        Почта:
         <input 
           type="email" 
           value={email} 
@@ -35,7 +35,7 @@ const RegisterForm: React.FC = () => {
         />
       </label>
       <label>
-        Occupation:
+        Занятость:
         <input 
           type="text" 
           value={occupation} 
@@ -44,7 +44,7 @@ const RegisterForm: React.FC = () => {
         />
       </label>
       <label>
-        Password:
+        Пароль:
         <input 
           type="password" 
           value={password} 
@@ -53,7 +53,7 @@ const RegisterForm: React.FC = () => {
         />
       </label>
       <label>
-        Confirm Password:
+        Пароль:
         <input 
           type="password" 
           value={confirmPassword} 
@@ -62,7 +62,7 @@ const RegisterForm: React.FC = () => {
         />
       </label>
       <label>
-        Phone Number:
+        Номер телефона:
         <input 
           type="tel" 
           value={phoneNumber} 
@@ -70,7 +70,7 @@ const RegisterForm: React.FC = () => {
           required 
         />
       </label>
-      <button type="submit">Register</button>
+      <button type="submit">Регистрация</button>
     </form>
   );
 };

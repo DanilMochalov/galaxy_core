@@ -13,7 +13,7 @@ const LoginForm: React.FC = () => {
   return (
     <form className={styles.form} onSubmit={handleSubmit}>
       <label>
-        Email:
+        Почта:
         <input 
           type="email" 
           value={email} 
@@ -22,7 +22,7 @@ const LoginForm: React.FC = () => {
         />
       </label>
       <label>
-        Password:
+        Пароль:
         <input 
           type="password" 
           value={password} 
@@ -30,8 +30,8 @@ const LoginForm: React.FC = () => {
           required 
         />
       </label>
-      <button type="submit">Login</button>
-      <p className={styles.forgotPassword}>Forgot Password?</p>
+      <button type="submit">Вход</button>
+      <p className={styles.forgotPassword}>Забыли пароль?</p>
     </form>
   );
 };
